@@ -1,42 +1,42 @@
 {
-    "user": [
-        {
-            "id" : 1,
-            "name" : "Klau"
-        },
-        {
-            "id" : 2,
-            "name" : "Gábor"
-        },
-        {
-            "id" : 3,
-            "name" : "András"
-        }
-    ],
-    "task": [
-        {
-            "id" : 1,
-            "title" : "HTML készítés",
-            "description" : "Alakítsd ki a felületet a Task-ok megjelenítésére (div-ekben)!",
-            "endedate" : "2020.12.12.",
-            "userId" : 1,
-            "status" : "folyamatban"
-        },
-        {
-            "id" : 2,
-            "title" : "HTML készítés",
-            "description" : "Alakítsd ki a felületet a Userek megjelenítésére (táblázat)!",
-            "endedate" : "2021.03.21.",
-            "userId" : 2,
-            "status" : "folyamatban"
-        },
-        {
-            "id" : 3,
-            "title" : "JSON készítés",
-            "description" : "Hozd létre az adatbázist reprezentáló JSON fájlt!",
-            "endedate" : "1998.01.22.",
-            "userId" : 3,
-            "status" : "kész"
-        }
-    ]
+  "user": [
+    {
+      "id": 1,
+      "name": "Klau"
+    },
+    {
+      "id": 2,
+      "name": "Gábor"
+    },
+    {
+      "id": 3,
+      "name": "András"
+    }
+  ],
+  "task": [
+    {
+      "id": 1,
+      "title": "Nem 1",
+      "description": "asd",
+      "endedate": "2021-12-11T15:15",
+      "userId": "feladatotv1",
+      "status": "legordulostatusz1"
+    },
+    {
+      "id": 2,
+      "title": "HTML készítés",
+      "description": "Alakítsd ki a felületet a Userek megjelenítésére (táblázat)!",
+      "endedate": "2021.03.21.",
+      "userId": 2,
+      "status": "folyamatban"
+    },
+    {
+      "id": 3,
+      "title": "JSON készítés",
+      "description": "Hozd létre az adatbázist reprezentáló JSON fájlt!",
+      "endedate": "1998.01.22.",
+      "userId": 3,
+      "status": "kész"
+    }
+  ]
 }

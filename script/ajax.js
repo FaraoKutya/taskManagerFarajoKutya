@@ -43,7 +43,7 @@ class MyAjax {
 
   adatmodosit(faljnev, adat, id) {
     $.ajax({
-      url: faljnev + "?" + id,
+      url: faljnev + "/" + id,
       type: "PUT",
       data: adat,
       success: function (result) {
