@@ -1,39 +1,46 @@
 @charset "utf-8";
 
-body{
-    background-color: beige;
+body {
+  background-color: rgb(191, 194, 193);
 }
 
 main {
-    width: 80%;
-    max-width: 1000px;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    grid-template-areas: 
-    "h h h h h h",
-    "n n n n n n",
-    "a a a a a a",
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-areas: "h h h h h h", "n n n n n n", "a a a a a a",
     "f f f f f f";
-    grid-gap: 10px;
-    background-color: azure;
+  grid-gap: 10px;
+  background-color: rgb(245, 245, 238);
 }
 
-header {grid-area: "h"; text-align: center;}
+header {
+  grid-area: "h";
+  text-align: center;
+}
 
-nav {grid-area: "n";}
+nav {
+  grid-area: "n";
+}
 
 nav ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
 }
 
-li{
-    list-style-type: none;
-    text-decoration: none;
+li {
+  list-style-type: none;
+  text-decoration: none;
 }
 
-article {grid-area: "a";}
+article {
+  grid-area: "a";
+}
 
-footer {grid-area: "h"; text-align: center;}
+footer {
+  grid-area: "h";
+  text-align: center;
+}

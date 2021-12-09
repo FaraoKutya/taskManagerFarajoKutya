@@ -1,6 +1,15 @@
 @charset "utf-8";
 
+body {
+  background-color: rgb(72, 105, 95);
+}
+
+main {
+  padding: 15px;
+}
+
 .taskAdatok {
+  background-color: rgb(245, 245, 238);
   display: flex;
   gap: 10px;
   padding: 10px;
