@@ -6,10 +6,33 @@ $(function () {
 
   myAjax.adatbeolvas(apiVegpont, taskok, TaskValasztas);
 
+  /* Rendezés határidő szerint */
+  $(document).ready(function () {
+    $("#kategoria").on("change", function () {
+      let apiVegpont = "http://localhost:3000/task";
+      switch ($("#kategoria").val()) {
+        case "datumnovekvo":
+          let novekvo = "?_sort=endedate&_order=asc";
+          apiVegpont += novekvo;
+          // ajax hívás
+          myAjax.adatbeolvas(apiVegpont, taskok, TaskValasztas);
+          break;
+        case "datumcsokkeno":
+          let csokkeno = "?_sort=endedate&_order=desc";
+          apiVegpont += csokkeno;
+          // ajax hívás
+          myAjax.adatbeolvas(apiVegpont, taskok, TaskValasztas);
+          break;
+        default:
+          console.log("alapértelmezett");
+      }
+    });
+  });
+
   function TaskValasztas(taskok) {
     // van egy sablonelemünk
     const szuloElem = $(".taskAdatok");
-    const sablonElem = $(".taskok");
+    const sablonElem = $(".sablon .taskok");
     szuloElem.empty();
     sablonElem.show();
     taskok.forEach(function (elem, index) {

@@ -18,7 +18,7 @@
             "id" : 1,
             "title" : "HTML készítés",
             "description" : "Alakítsd ki a felületet a Task-ok megjelenítésére (div-ekben)!",
-            "endedate" : "HTML kész",
+            "endedate" : "2020.12.12.",
             "userId" : 1,
             "status" : "folyamatban"
         },
@@ -26,7 +26,7 @@
             "id" : 2,
             "title" : "HTML készítés",
             "description" : "Alakítsd ki a felületet a Userek megjelenítésére (táblázat)!",
-            "endedate" : "HTML kész",
+            "endedate" : "2021.03.21.",
             "userId" : 2,
             "status" : "folyamatban"
         },
@@ -34,7 +34,7 @@
             "id" : 3,
             "title" : "JSON készítés",
             "description" : "Hozd létre az adatbázist reprezentáló JSON fájlt!",
-            "endedate" : "JSON kész",
+            "endedate" : "1998.01.22.",
             "userId" : 3,
             "status" : "kész"
         }
