@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.taskAdatok {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.taskok {
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  font-size: 12pt;
+}
+
+.taskok span {
+  align-items: center;
+  bottom: 5px;
+  right: 5px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  font-size: 10pt;
+  padding: 3px 15px;
+}
+
+.taskok button {
+  font-size: 8pt;
+  padding: 3px;
+  margin: 2px;
+  align-self: baseline;
+  justify-content: space-around;
+  gap: 10px;
+}
