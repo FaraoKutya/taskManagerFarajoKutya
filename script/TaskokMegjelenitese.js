@@ -2,6 +2,7 @@ $(function () {
   const myAjax = new MyAjax();
   const taskok = [];
   let apiVegpont = "http://localhost:3000/task";
+  let apiUserNev = "_expand=user.name";
 
   myAjax.adatbeolvas(apiVegpont, taskok, TaskValasztas);
 
@@ -20,8 +21,8 @@ $(function () {
 
   /* Törlés */
   $(window).on("torles", (event) => {
-    console.log(event.detail.id);
-    myAjax.deleteAdat("adatbazis.json", event.detail.id);
+    //console.log(event.detail.id);
+    myAjax.adattorles(apiVegpont, event.detail.id);
   });
 
   $(window).on("modositas", function (event) {
