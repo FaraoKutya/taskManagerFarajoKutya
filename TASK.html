@@ -54,7 +54,8 @@
         </form>
       </aside>
       <article>
-        <div class="taskAdatok">
+        <div class="taskAdatok"></div>
+        <div class="sablon">
           <div class="taskok">
             <h3 class="title">1. feladat</h3>
             <p class="description">Ez az első feladat leírása.</p>
@@ -64,6 +65,26 @@
             <input type="button" class="modositas" value="Módosítás" />
             <input type="button" class="torles" value="Törlés" />
           </div>
+        </div>
+        <div class="urlap">
+          <form id="keresesRendezes">
+            <fieldset>
+              <legend>Rendezés</legend>
+              <label for="rendezes">Rendezési szempontok:</label>
+              <br />
+              <select name="kategoria" id="kategoria">
+                <option id="alapertelmezett" value="alapertelmezett">
+                  Alapértelmezett megjelenés
+                </option>
+                <option id="datumnovekvo" value="datumnovekvo">
+                  Dátum szerint növekvő
+                </option>
+                <option id="datumcsokkeno" value="datumcsokkeno">
+                  Dátum szerint csökkenő
+                </option>
+              </select>
+            </fieldset>
+          </form>
         </div>
       </article>
       <footer>Hecz Klaudia</footer>
