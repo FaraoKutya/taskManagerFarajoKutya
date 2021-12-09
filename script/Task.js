@@ -2,12 +2,11 @@ class Task {
   constructor(elem, adat) {
     this.elem = elem;
     this.adat = adat;
-    this.id = id;
-    this.title = this.elem.childre(".title");
-    this.description = this.elem.childre(".description");
-    this.endDate = this.elem.childre(".endDate");
-    this.userId = this.elem.childre(".userId");
-    this.status = this.elem.childre(".status");
+    this.title = this.elem.children(".title");
+    this.description = this.elem.children(".description");
+    this.endDate = this.elem.children(".endDate");
+    this.userId = this.elem.children(".userId");
+    this.status = this.elem.children(".status");
     this.adat;
     this.elem.children(".torles").on("click", () => {
       this.TorolTrigger();
