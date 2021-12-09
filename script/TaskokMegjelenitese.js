@@ -42,6 +42,31 @@ $(function () {
     sablonElem.hide();
   }
 
+  $(".ujtask").on("click", () => {
+    let ujAdat = {
+        "id": $("#ide").val(),
+        "title": $("#cim").val(),
+        "description": $("#leiras").val(),
+        "endedate": $("#hatarido").val(),
+        "userId": $("#feladatotv").val(),
+        "status": $("#legordulostatusz").val()
+    };
+    myAjax.adatkuldes(apiVegpont, ujAdat);
+  });
+
+  $(".modosit").on("click", () => {
+    let ujAdat = {
+        "id": $("#ide").val(),
+        "title": $("#cim").val(),
+        "description": $("#leiras").val(),
+        "endedate": $("#hatarido").val(),
+        "userId": $("#feladatotv").val(),
+        "status": $("#legordulostatusz").val()
+    };
+    let helyiApiVegpont = "http://localhost:3000/task";
+    myAjax.adatmodosit(helyiApiVegpont, ujAdat, $("#ide").val());
+  });
+
   /* Törlés */
   $(window).on("torles", (event) => {
     //console.log(event.detail.id);

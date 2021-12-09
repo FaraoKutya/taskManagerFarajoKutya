@@ -12,6 +12,17 @@
   grid-gap: 10px;
 }
 
+fieldset {
+  display: grid;
+  grid-template-columns: 200px 400px;
+  text-align: right;
+  grid-gap: 10px;
+}
+
+textarea {
+  height: 80px;
+}
+
 .taskok {
 }
 
