@@ -9,20 +9,7 @@ main {
   max-width: 800px;
   padding: 5px;
 }
-nav ul {
-  display: grid;
-  grid-template-columns: 100px 100px;
-}
-nav ul li {
-  padding: 3px;
-  border: 1px solid lavender;
-  background-color: black;
-  list-style-type: none;
-}
-nav ul a {
-  text-decoration: none;
-  color: white;
-}
+
 table {
   width: 500pt;
   margin-left: auto;

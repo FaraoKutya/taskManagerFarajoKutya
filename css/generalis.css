@@ -10,8 +10,7 @@ main {
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
-  grid-template-areas: "h h h h h h", "n n n n n n", "a a a a a a",
-    "f f f f f f";
+  grid-template-areas: "h", "n", "a", "f";
   grid-gap: 10px;
   background-color: rgb(245, 245, 238);
 }
@@ -27,13 +26,29 @@ nav {
 
 nav ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-template-columns: 100px 100px;
 }
 
-li {
+nav ul .navfeladat {
+  padding: 3px;
+  background-color: cadetblue;
   list-style-type: none;
+}
+
+nav ul .navfelhasznalo {
+  padding: 3px;
+  background-color: black;
+  list-style-type: none;
+}
+
+nav ul .navfeladat a {
   text-decoration: none;
+  color: white;
+}
+
+nav ul .navfehasznalo a {
+  text-decoration: none;
+  color: white;
 }
 
 article {
