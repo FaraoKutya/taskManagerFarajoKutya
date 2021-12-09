@@ -2,13 +2,11 @@ class Task {
   constructor(elem, adat) {
     this.elem = elem;
     this.adat = adat;
-    this.id = id;
-    this.title = this.elem.childre(".title");
-    this.description = this.elem.childre(".description");
-    this.endDate = this.elem.childre(".endDate");
-    this.userId = this.elem.childre(".userId");
-    this.status = this.elem.childre(".status");
-    this.adat;
+    this.title = this.elem.children(".title");
+    this.description = this.elem.children(".description");
+    this.endedate = this.elem.children(".endDate");
+    this.userId = this.elem.children(".userId");
+    this.status = this.elem.children(".status");
     this.elem.children(".torles").on("click", () => {
       this.TorolTrigger();
     });
@@ -16,12 +14,13 @@ class Task {
     this.elem.children(".modositas").on("click", () => {
       this.ModositTrigger();
     });
+    this.setAdatok(adat);
   }
 
   setAdatok(ertekek) {
     this.title.html(ertekek.title);
     this.description.html(ertekek.description);
-    this.endDate.html(ertekek.endDate);
+    this.endedate.html(ertekek.endedate);
     this.userId.html(ertekek.userId);
     this.status.html(ertekek.status);
   }
