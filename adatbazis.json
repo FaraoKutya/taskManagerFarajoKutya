@@ -1,0 +1,42 @@
+{
+    "user": [
+        {
+            "id" : 1,
+            "name" : "Klau"
+        },
+        {
+            "id" : 2,
+            "name" : "Gábor"
+        },
+        {
+            "id" : 3,
+            "name" : "András"
+        }
+    ],
+    "task": [
+        {
+            "id" : 1,
+            "title" : "HTML készítés",
+            "description" : "Alakítsd ki a felületet a Task-ok megjelenítésére (div-ekben)!",
+            "ende-date" : "HTML kész",
+            "userId" : 1,
+            "status" : "folyamatban"
+        },
+        {
+            "id" : 2,
+            "title" : "HTML készítés",
+            "description" : "Alakítsd ki a felületet a Userek megjelenítésére (táblázat)!",
+            "ende-date" : "HTML kész",
+            "userId" : 2,
+            "status" : "folyamatban"
+        },
+        {
+            "id" : 3,
+            "title" : "JSON készítés",
+            "description" : "Hozd létre az adatbázist reprezentáló JSON fájlt!",
+            "ende-date" : "JSON kész",
+            "userId" : 3,
+            "status" : "kész"
+        }
+    ]
+}
