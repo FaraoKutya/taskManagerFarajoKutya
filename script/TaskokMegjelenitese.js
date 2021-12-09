@@ -18,6 +18,18 @@ $(function () {
     sablonElem.hide();
   }
 
+  $(".ujtask").on("click", () => {
+    let ujAdat = {
+        "id": $("#ide").val(),
+        "title": $("#cim").val(),
+        "description": $("#leiras").val(),
+        "endedate": $("#hatarido").val(),
+        "userId": $("#feladatotv").val(),
+        "status": $("#legordulostatusz").val()
+    };
+    myAjax.adatkuldes(apiVegpont, ujAdat);
+  });
+
   /* Törlés */
   $(window).on("torles", (event) => {
     console.log(event.detail.id);

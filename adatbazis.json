@@ -1,42 +1,50 @@
 {
-    "user": [
-        {
-            "id" : 1,
-            "name" : "Klau"
-        },
-        {
-            "id" : 2,
-            "name" : "Gábor"
-        },
-        {
-            "id" : 3,
-            "name" : "András"
-        }
-    ],
-    "task": [
-        {
-            "id" : 1,
-            "title" : "HTML készítés",
-            "description" : "Alakítsd ki a felületet a Task-ok megjelenítésére (div-ekben)!",
-            "endedate" : "HTML kész",
-            "userId" : 1,
-            "status" : "folyamatban"
-        },
-        {
-            "id" : 2,
-            "title" : "HTML készítés",
-            "description" : "Alakítsd ki a felületet a Userek megjelenítésére (táblázat)!",
-            "endedate" : "HTML kész",
-            "userId" : 2,
-            "status" : "folyamatban"
-        },
-        {
-            "id" : 3,
-            "title" : "JSON készítés",
-            "description" : "Hozd létre az adatbázist reprezentáló JSON fájlt!",
-            "endedate" : "JSON kész",
-            "userId" : 3,
-            "status" : "kész"
-        }
-    ]
+  "user": [
+    {
+      "id": 1,
+      "name": "Klau"
+    },
+    {
+      "id": 2,
+      "name": "Gábor"
+    },
+    {
+      "id": 3,
+      "name": "András"
+    }
+  ],
+  "task": [
+    {
+      "id": 1,
+      "title": "HTML készítés",
+      "description": "Alakítsd ki a felületet a Task-ok megjelenítésére (div-ekben)!",
+      "endedate": "HTML kész",
+      "userId": 1,
+      "status": "folyamatban"
+    },
+    {
+      "id": 2,
+      "title": "HTML készítés",
+      "description": "Alakítsd ki a felületet a Userek megjelenítésére (táblázat)!",
+      "endedate": "HTML kész",
+      "userId": 2,
+      "status": "folyamatban"
+    },
+    {
+      "id": 3,
+      "title": "JSON készítés",
+      "description": "Hozd létre az adatbázist reprezentáló JSON fájlt!",
+      "endedate": "JSON kész",
+      "userId": 3,
+      "status": "kész"
+    },
+    {
+      "id": "6",
+      "title": "asd",
+      "description": "asd",
+      "endedate": "2021-12-05T15:02",
+      "userId": "feladatotv2",
+      "status": "legordulostatusz1"
+    }
+  ]
 }

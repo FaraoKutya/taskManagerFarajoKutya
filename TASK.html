@@ -24,6 +24,35 @@
           <li><a href="user.html"></a>Felhasználók</li>
         </ul>
       </nav>
+      <aside>
+        <form>
+          <fieldset>
+            <legend>Task</legend>
+            <label for="ide">ID: </label>
+            <input type="text" name="ide" id="ide" placeholder="ID...">
+            <label for="cim">Cím: </label>
+            <input type="text" name="cim" id="cim" placeholder="Cím...">
+            <label for="leiras">Leírás: </label>
+            <textarea name="leiras" id="leiras" placeholder="Leírás..."></textarea>
+            <label for="legordulostatusz">Státusz: </label>
+            <select id="legordulostatusz" name="legordulostatusz">
+              <option value="legordulostatusz1">Folyamatban</option>
+              <option value="legordulostatusz2">...</option>
+            </select>
+            <label for="hatarido">Határidő: </label>
+            <input type="datetime-local" id="hatarido" name="hatarido">
+            <label for="feladatotv">A feladatot elvégzi: </label>
+            <select id="feladatotv" name="feladatotv">
+              <option value="feladatotv0">Kérlek válassz!</option>
+              <option value="feladatotv1">Ember 1</option>
+              <option value="feladatotv2">Ember 2</option>
+              <option value="feladatotv3">Ember 3</option>
+            </select>
+            <input type="button" name="ujtask" class="ujtask" value="Új Task">
+            <input type="button" name="modosit" id="modosit" value="Módosítás">
+          </fieldset>
+        </form>
+      </aside>
       <article>
         <div class="taskAdatok">
           <div class="taskok">
