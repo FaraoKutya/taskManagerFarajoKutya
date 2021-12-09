@@ -13,7 +13,6 @@ class Task {
     this.elem.children(".modositas").on("click", () => {
       this.ModositTrigger();
     });
-  
 
     this.setAdatok(adat);
   }
@@ -22,7 +21,7 @@ class Task {
     this.title.html(ertekek.title);
     this.description.html(ertekek.description);
     this.endedate.html(ertekek.endedate);
-    this.userId.html(ertekek.userId);
+    this.userId.html(ertekek.user.name);
     this.status.html(ertekek.status);
   }
 
@@ -37,6 +36,4 @@ class Task {
     //   console.log("rákattintottál a termékre");
     window.dispatchEvent(esemeny);
   }
-
- 
 }

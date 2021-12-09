@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .taskAdatok div {
-  background-color: rgb(245, 245, 238);
+  background-color: #fffffc;
   padding: 10px;
   border: 1px solid black;
   border-radius: 8px;
@@ -9,21 +9,18 @@
 
 .taskAdatok {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 15px;
 }
 
 fieldset {
   display: grid;
   grid-template-columns: 200px 400px;
-  text-align: right;
+  text-align: left;
   grid-gap: 10px;
 }
 
 textarea {
   height: 80px;
-}
-
-.taskok {
 }
 
 .taskok span {

@@ -1,8 +1,7 @@
 $(function () {
   const myAjax = new MyAjax();
   const taskok = [];
-  let apiVegpont = "http://localhost:3000/task";
-  let apiUserNev = "_expand=user.name";
+  let apiVegpont = "http://localhost:3000/tasks?_expand=user";
 
   myAjax.adatbeolvas(apiVegpont, taskok, TaskValasztas);
 
@@ -44,24 +43,24 @@ $(function () {
 
   $(".ujtask").on("click", () => {
     let ujAdat = {
-        "id": $("#ide").val(),
-        "title": $("#cim").val(),
-        "description": $("#leiras").val(),
-        "endedate": $("#hatarido").val(),
-        "userId": $("#feladatotv").val(),
-        "status": $("#legordulostatusz").val()
+      id: $("#ide").val(),
+      title: $("#cim").val(),
+      description: $("#leiras").val(),
+      endedate: $("#hatarido").val(),
+      userId: $("#feladatotv").val(),
+      status: $("#legordulostatusz").val(),
     };
     myAjax.adatkuldes(apiVegpont, ujAdat);
   });
 
   $(".modosit").on("click", () => {
     let ujAdat = {
-        "id": $("#ide").val(),
-        "title": $("#cim").val(),
-        "description": $("#leiras").val(),
-        "endedate": $("#hatarido").val(),
-        "userId": $("#feladatotv").val(),
-        "status": $("#legordulostatusz").val()
+      id: $("#ide").val(),
+      title: $("#cim").val(),
+      description: $("#leiras").val(),
+      endedate: $("#hatarido").val(),
+      userId: $("#feladatotv").val(),
+      status: $("#legordulostatusz").val(),
     };
     let helyiApiVegpont = "http://localhost:3000/task";
     myAjax.adatmodosit(helyiApiVegpont, ujAdat, $("#ide").val());

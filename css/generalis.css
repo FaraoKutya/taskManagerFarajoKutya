@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-  background-color: rgb(191, 194, 193);
+  background-color: #c2cfce;
 }
 
 main {
@@ -12,12 +12,12 @@ main {
   display: grid;
   grid-template-areas: "h", "n", "a", "f";
   grid-gap: 10px;
-  background-color: rgb(245, 245, 238);
+  background-color: #fffffc;
 }
 
 header {
   grid-area: "h";
-  text-align: center;
+  margin-left: 10px;
 }
 
 nav {
@@ -31,7 +31,7 @@ nav ul {
 
 nav ul .navfeladat {
   padding: 3px;
-  background-color: cadetblue;
+  background-color: #c2cfce;
   list-style-type: none;
 }
 
@@ -41,12 +41,7 @@ nav ul .navfelhasznalo {
   list-style-type: none;
 }
 
-nav ul .navfeladat a {
-  text-decoration: none;
-  color: white;
-}
-
-nav ul .navfehasznalo a {
+nav ul a {
   text-decoration: none;
   color: white;
 }

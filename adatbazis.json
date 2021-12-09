@@ -1,5 +1,5 @@
 {
-  "user": [
+  "users": [
     {
       "id": 1,
       "name": "Klau"
@@ -13,13 +13,13 @@
       "name": "András"
     }
   ],
-  "task": [
+  "tasks": [
     {
       "id": 1,
       "title": "Nem 1",
       "description": "asd",
       "endedate": "2021-12-11T15:15",
-      "userId": "feladatotv1",
+      "userId": 1,
       "status": "legordulostatusz1"
     },
     {
@@ -29,14 +29,6 @@
       "endedate": "2021.03.21.",
       "userId": 2,
       "status": "folyamatban"
-    },
-    {
-      "id": 3,
-      "title": "JSON készítés",
-      "description": "Hozd létre az adatbázist reprezentáló JSON fájlt!",
-      "endedate": "1998.01.22.",
-      "userId": 3,
-      "status": "kész"
     }
   ]
 }
