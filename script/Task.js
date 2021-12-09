@@ -4,10 +4,9 @@ class Task {
     this.adat = adat;
     this.title = this.elem.children(".title");
     this.description = this.elem.children(".description");
-    this.endDate = this.elem.children(".endDate");
+    this.endedate = this.elem.children(".endDate");
     this.userId = this.elem.children(".userId");
     this.status = this.elem.children(".status");
-    this.adat;
     this.elem.children(".torles").on("click", () => {
       this.TorolTrigger();
     });
@@ -15,12 +14,13 @@ class Task {
     this.elem.children(".modositas").on("click", () => {
       this.ModositTrigger();
     });
+    this.setAdatok(adat);
   }
 
   setAdatok(ertekek) {
     this.title.html(ertekek.title);
     this.description.html(ertekek.description);
-    this.endDate.html(ertekek.endDate);
+    this.endedate.html(ertekek.endedate);
     this.userId.html(ertekek.userId);
     this.status.html(ertekek.status);
   }
